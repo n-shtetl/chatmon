@@ -1,0 +1,102 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(98, 213, 201);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.join-box {
+    margin-top: 200px;
+    height: 35%;
+    width: 25%;
+    background-color: #2d948a;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-title {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    font-size: 2em;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    background-color: #33b1a0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 85%;
+    padding: 3% 8% 3% 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.username-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.room-box {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 4px;
+}
+
+input {
+    height:30px;
+    outline: none;
+    font-size: 1em;
+    
+}
+
+select { 
+    height: 35px;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #217169;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+    background: #174d48;
+}
+
+button:focus {
+    outline: none;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+.chat-icon {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(121deg) brightness(111%) contrast(105%);
+}

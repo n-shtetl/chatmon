@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="join-box">
+        <div class="app-title">
+            <img class="chat-icon" width="60" height="60" src="https://img.icons8.com/carbon-copy/100/000000/chat.png"/>
+            ChatMon
+        </div>
+        <form action="chat.html" class="login-form">
+            <div class="username-box">
+                <label for="username">Username</label>
+                <input name="username" placeholder="Enter username..." type="text" class="username">
+            </div>
+            <div class="room-box">
+                <label for="room">Chat Room</label>
+                <select name="room" class="room-options">
+                    <option value="React">React</option>
+                    <option value="Angular">Angular</option>
+                    <option value="Vue">Vue</option>
+                </select>
+            </div>
+            <button type="submit">Join Chat</button>
+        </form>
+    </div>
+</body>
+</html>

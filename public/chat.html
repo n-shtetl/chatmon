@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/chat.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Chat Room</title>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="title-and-exit">
+            <div class="app-title">
+                <img class="chat-icon" width="60" height="60" src="https://img.icons8.com/carbon-copy/100/000000/chat.png"/>
+                ChatMon
+            </div>
+            <a href="./index.html" class="exit-but">
+                <div>Leave Room</div>
+            </a>
+        </div>
+        <div class="chat-and-info">
+            <div class="info">
+                <div class="room-name">
+                    <div class="name">
+                        <!-- <img class="door-icon" width="30px" height="30px" src="https://img.icons8.com/pastel-glyph/64/000000/door-opened.png"/> -->
+                        <img class="door-icon" width="30px" height="30px" src="https://img.icons8.com/pastel-glyph/64/000000/door-opened.png"/>
+
+                        Room Name:
+                    </div>
+                </div>
+                <div class="room">
+                    <div id="room-label">React</div>
+                </div>
+                <div class="users">
+                    <div class="users-title">
+                        <img class="door-icon" width="30px" height="30px" src="https://img.icons8.com/dotty/80/000000/group-foreground-selected.png"/>
+                        Users
+                    </div>
+                    <ul class="users-list">
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="chat">
+                <div class="chat-page">
+                    <!-- <div class="message">
+                        <div class="sender-and-timestamp"><div class="sender">ChatMonBot</div><div class="timestamp">2:45pm</div></div>
+                        <div class="message-content">Welcome to the React Room!</div>
+                    </div>
+                    <div class="message">
+                        <div class="sender-and-timestamp"><div class="sender">Max</div><div class="timestamp">2:45pm</div></div>
+                        <div class="message-content">Thanks ChatMonBot!</div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="message-box">
+            <input class="message-input" type="text" placeholder="Enter message...">
+            <div id="send-but" class="exit-but">
+                <img class="exit-icon" width="20px" height="20px" src="https://img.icons8.com/windows/32/000000/filled-sent.png"/>
+                <div>Send</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js" integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w==" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
